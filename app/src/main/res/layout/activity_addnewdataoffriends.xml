@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addnewdataoffriends">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uphoto"
+            android:layout_width="184dp"
+            android:layout_height="179dp"
+            android:src="@drawable/ballon"
+            app:civ_border_color="#4b4336"
+            app:civ_border_width="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="660dp"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/uphoto"
+            app:layout_constraintStart_toStartOf="@+id/uphoto"
+            app:layout_constraintTop_toBottomOf="@+id/uphoto"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <EditText
+            android:id="@+id/uName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/uphoto"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/uphoto"
+            app:layout_constraintTop_toBottomOf="@+id/uphoto"
+            app:layout_constraintVertical_bias="0.088" />
+
+        <EditText
+            android:id="@+id/uPhonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/uphoto"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/uphoto"
+            app:layout_constraintTop_toBottomOf="@+id/uphoto"
+            app:layout_constraintVertical_bias="0.386" />
+
+        <Button
+            android:id="@+id/uDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Date"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/uphoto"
+            app:layout_constraintStart_toStartOf="@+id/uphoto"
+            app:layout_constraintTop_toBottomOf="@+id/uphoto"
+            app:layout_constraintVertical_bias="0.507" />
+
+        <Button
+            android:id="@+id/uTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Time"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/uDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/uDate"
+            app:layout_constraintTop_toBottomOf="@+id/uDate"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <EditText
+            android:id="@+id/uNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Notes(i.e Give a gift)"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/uphoto"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/uphoto"
+            app:layout_constraintTop_toBottomOf="@+id/uphoto"
+            app:layout_constraintVertical_bias="0.686" />
+
+        <EditText
+            android:id="@+id/uNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="NickName"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/uphoto"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/uphoto"
+            app:layout_constraintTop_toBottomOf="@+id/uphoto"
+            app:layout_constraintVertical_bias="0.224" />
+
+        <Button
+            android:id="@+id/uadddata"
+            android:layout_width="100dp"
+            android:layout_height="51dp"
+            android:text="ADD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/uNotes"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/uNotes"
+            app:layout_constraintTop_toBottomOf="@+id/uNotes"
+            app:layout_constraintVertical_bias="0.4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
